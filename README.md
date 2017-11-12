@@ -28,3 +28,8 @@
 	Once I get the resultant 2D array from the above step, I will then pass it to the 
 	'calculate()' method in ScoreBowling class to get the scores for each frame as well as 
 	the overall score of the game based on the rules.
+
+
+# Limitations
+	- Need to add more examples for failing specs
+	- Need to optimize and refactor the code
