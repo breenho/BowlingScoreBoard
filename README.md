@@ -34,104 +34,110 @@
 	- Need to optimize and refactor the code
 
 # Examples
-1) Input String = "xxxxxxxxxxxx"
-Output : "Congratulations!! Your score is 300"
+	1) Input String = "xxxxxxxxxxxx"
+	Output : "Congratulations!! Your score is 300"
 
-2) Input String = "00000000000000000000"
-Output : "Sorry!! Your score is 0"
+	2) Input String = "00000000000000000000"
+	Output : "Sorry!! Your score is 0"
 
-3) Input String = "00000000000000000000"
-Splitted Array = [["9", "0"], ["9", "0"], ["9", "0"], ["9", "0"], ["9", "0"], ["9", "0"], ["9", "0"], ["9", "0"], ["9", "0"], ["9", "0"]]
-Output:
-"Frame 1 score is : 9"
-"Frame 2 score is : 9"
-"Frame 3 score is : 9"
-"Frame 4 score is : 9"
-"Frame 5 score is : 9"
-"Frame 6 score is : 9"
-"Frame 7 score is : 9"
-"Frame 8 score is : 9"
-"Frame 9 score is : 9"
-"Frame 10 score is : 9"
-"Overall score is : 90"
+	3) Input String = "00000000000000000000"
+	Splitted Array = [["9", "0"], ["9", "0"], ["9", "0"], ["9", "0"], ["9", "0"], ["9", "0"],
+	["9", "0"], ["9", "0"], ["9", "0"], ["9", "0"]]
+	Output:
+	"Frame 1 score is : 9"
+	"Frame 2 score is : 9"
+	"Frame 3 score is : 9"
+	"Frame 4 score is : 9"
+	"Frame 5 score is : 9"
+	"Frame 6 score is : 9"
+	"Frame 7 score is : 9"
+	"Frame 8 score is : 9"
+	"Frame 9 score is : 9"
+	"Frame 10 score is : 9"
+	"Overall score is : 90"
 
-4) Input String = "00000000000000000000"
-Splitted Array = [["5", "/"], ["5", "/"], ["5", "/"], ["5", "/"], ["5", "/"], ["5", "/"], ["5", "/"], ["5", "/"], ["5", "/"], ["5", "/"], ["5", 0]]
-Output:
-"Frame 1 score is : 15"
-"Frame 2 score is : 15"
-"Frame 3 score is : 15"
-"Frame 4 score is : 15"
-"Frame 5 score is : 15"
-"Frame 6 score is : 15"
-"Frame 7 score is : 15"
-"Frame 8 score is : 15"
-"Frame 9 score is : 15"
-"Frame 10 score is : 15"
-"Overall score is : 150"
+	4) Input String = "00000000000000000000"
+	Splitted Array = [["5", "/"], ["5", "/"], ["5", "/"], ["5", "/"], ["5", "/"], ["5", "/"],
+	["5", "/"], ["5", "/"], ["5", "/"], ["5", "/"], ["5", 0]]
+	Output:
+	"Frame 1 score is : 15"
+	"Frame 2 score is : 15"
+	"Frame 3 score is : 15"
+	"Frame 4 score is : 15"
+	"Frame 5 score is : 15"
+	"Frame 6 score is : 15"
+	"Frame 7 score is : 15"
+	"Frame 8 score is : 15"
+	"Frame 9 score is : 15"
+	"Frame 10 score is : 15"
+	"Overall score is : 150"
 
-5) Input String = "00000000000000000000"
-Splitted Array = [["1", "4"], ["4", "5"], ["6", "/"], ["5", "/"], ["0", "0"], ["0", "1"], ["7", "/"], ["6", "/"], ["0", "0"], ["2", "/"], ["6", 0]]
-Output:
-"Frame 1 score is : 5"
-"Frame 2 score is : 9"
-"Frame 3 score is : 15"
-"Frame 4 score is : 10"
-"Frame 5 score is : 0"
-"Frame 6 score is : 1"
-"Frame 7 score is : 16"
-"Frame 8 score is : 10"
-"Frame 9 score is : 0"
-"Frame 10 score is : 16"
-"Overall score is : 82"
+	5) Input String = "00000000000000000000"
+	Splitted Array = [["1", "4"], ["4", "5"], ["6", "/"], ["5", "/"], ["0", "0"], ["0", "1"],
+	["7", "/"], ["6", "/"], ["0", "0"], ["2", "/"], ["6", 0]]
+	Output:
+	"Frame 1 score is : 5"
+	"Frame 2 score is : 9"
+	"Frame 3 score is : 15"
+	"Frame 4 score is : 10"
+	"Frame 5 score is : 0"
+	"Frame 6 score is : 1"
+	"Frame 7 score is : 16"
+	"Frame 8 score is : 10"
+	"Frame 9 score is : 0"
+	"Frame 10 score is : 16"
+	"Overall score is : 82"
 
-6) Input String = "00000000000000000000"
-Splitted Array = [["9", "/"], ["3", "5"], ["6", "1"], ["3", "6"], ["8", "1"], ["5", "3"], ["2", "5"], ["8", "0"], ["7", "1"], ["8", "1"]]
-Output:
-"Frame 1 score is : 13"
-"Frame 2 score is : 8"
-"Frame 3 score is : 7"
-"Frame 4 score is : 9"
-"Frame 5 score is : 9"
-"Frame 6 score is : 8"
-"Frame 7 score is : 7"
-"Frame 8 score is : 8"
-"Frame 9 score is : 8"
-"Frame 10 score is : 9"
-"Overall score is : 86"
+	6) Input String = "00000000000000000000"
+	Splitted Array = [["9", "/"], ["3", "5"], ["6", "1"], ["3", "6"], ["8", "1"], ["5", "3"],
+	["2", "5"], ["8", "0"], ["7", "1"], ["8", "1"]]
+	Output:
+	"Frame 1 score is : 13"
+	"Frame 2 score is : 8"
+	"Frame 3 score is : 7"
+	"Frame 4 score is : 9"
+	"Frame 5 score is : 9"
+	"Frame 6 score is : 8"
+	"Frame 7 score is : 7"
+	"Frame 8 score is : 8"
+	"Frame 9 score is : 8"
+	"Frame 10 score is : 9"
+	"Overall score is : 86"
 
-7) Input String = "00000000000000000000"
-Splitted Array = [["9", "0"], ["3", "/"], ["6", "1"], ["3", "/"], ["8", "1"], ["5", "/"], ["0", "/"], ["8", "0"], ["7", "/"], ["8", "0"]]
-Output:
-"Frame 1 score is : 9"
-"Frame 2 score is : 16"
-"Frame 3 score is : 7"
-"Frame 4 score is : 18"
-"Frame 5 score is : 9"
-"Frame 6 score is : 10"
-"Frame 7 score is : 18"
-"Frame 8 score is : 8"
-"Frame 9 score is : 18"
-"Frame 10 score is : 8"
-"Overall score is : 121"
+	7) Input String = "00000000000000000000"
+	Splitted Array = [["9", "0"], ["3", "/"], ["6", "1"], ["3", "/"], ["8", "1"], ["5", "/"],
+	["0", "/"], ["8", "0"], ["7", "/"], ["8", "0"]]
+	Output:
+	"Frame 1 score is : 9"
+	"Frame 2 score is : 16"
+	"Frame 3 score is : 7"
+	"Frame 4 score is : 18"
+	"Frame 5 score is : 9"
+	"Frame 6 score is : 10"
+	"Frame 7 score is : 18"
+	"Frame 8 score is : 8"
+	"Frame 9 score is : 18"
+	"Frame 10 score is : 8"
+	"Overall score is : 121"
 
-8) Input String = "00000000000000000000"
-Splitted Array = [[10, 0], ["3", "/"], ["6", "1"], [10, 0], [10, 0], [10, 0], ["2", "/"], ["9", "0"], ["7", "/"], [10, 0], [10, 10]]
-Output:
-"Frame 1 score is : 20"
-"Frame 2 score is : 16"
-"Frame 3 score is : 7"
-"Frame 4 score is : 30"
-"Frame 5 score is : 22"
-"Frame 6 score is : 20"
-"Frame 7 score is : 19"
-"Frame 8 score is : 9"
-"Frame 9 score is : 20"
-"Frame 10 score is : 30"
-"Overall score is : 193"
+	8) Input String = "00000000000000000000"
+	Splitted Array = [[10, 0], ["3", "/"], ["6", "1"], [10, 0], [10, 0], [10, 0], ["2", "/"],
+	["9", "0"], ["7", "/"], [10, 0], [10, 10]]
+	Output:
+	"Frame 1 score is : 20"
+	"Frame 2 score is : 16"
+	"Frame 3 score is : 7"
+	"Frame 4 score is : 30"
+	"Frame 5 score is : 22"
+	"Frame 6 score is : 20"
+	"Frame 7 score is : 19"
+	"Frame 8 score is : 9"
+	"Frame 9 score is : 20"
+	"Frame 10 score is : 30"
+	"Overall score is : 193"
 
 # Author
-Breen - https://github.com/breenho
+	Breen - https://github.com/breenho
 
 # Contribution
-Please contribute to this repo to optimize the code.
+	Please contribute to this repo to optimize the code.
