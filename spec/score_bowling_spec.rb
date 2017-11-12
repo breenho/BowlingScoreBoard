@@ -13,7 +13,7 @@ describe ScoreBowling do
         "14456/5/00017/6/002/6" => "Overall score is : 82",
         "9/356136815325807181"  => "Overall score is : 86",
         "903/613/815/0/807/80"  => "Overall score is : 121",
-        "x3/61xxx2/907/xxx"     => "Overall score is : 193"
+        "x3/61xxx2/90/7xxx"     => "Overall score is : 193"
       }.each do |result_input_string, score|
 
         it "returns #{score} for #{result_input_string}" do

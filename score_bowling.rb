@@ -7,8 +7,9 @@ class ScoreBowling < InputSplit
 		elsif input_val == "00000000000000000000"
 			"Sorry!! Your score is 0"
 		else
+			validated = !input_val.match?(/[^x\/0-9]/) # String validation - this will allow only "x or / or 0 to 9"
 			input_obj = InputSplit.new
-			input = input_obj.form_input_array(input_val)
+			input = validated ? input_obj.form_input_array(input_val) : ""			
 			if !input.empty? && !input.kind_of?(String)
 				final_total = 0
 				input.each_with_index do |frame_score,index|
@@ -23,7 +24,7 @@ class ScoreBowling < InputSplit
 								else
 									frame_total += input[index+1][1].to_i
 								end
-							else # duplicate block
+							else
 								frame_total += input[index+1][0].to_i
 								if is_spare?(input[index+1][1])
 									frame_total += (10-input[index+1][0].to_i)
@@ -31,7 +32,7 @@ class ScoreBowling < InputSplit
 									frame_total += input[index+1][1].to_i
 								end
 							end
-						elsif is_value?(frame_score[0]) # dupicate block
+						elsif is_value?(frame_score[0])
 							frame_total += frame_score[0].to_i
 							if is_spare?(frame_score[1])
 								frame_total += (10-frame_score[0].to_i)
@@ -51,7 +52,7 @@ class ScoreBowling < InputSplit
 				end
 				p "Overall score is : #{final_total}"
 			else
-				p input
+				p "Error in input string"
 			end
 		end
 	end
@@ -59,8 +60,8 @@ end
 
 # Here I am leaving the below examples to test in console
 
-# %w(xxxxxxxxxxxx 00000000000000000000 90909090909090909090 5/5/5/5/5/5/5/5/5/5/5 14456/5/00017/6/002/6 
-# 9/356136815325807181 903/613/815/0/807/80 x3/61xxx2/907/xxx).each do |input_value|
-# 	score_bowling = ScoreBowling.new
-# 	score_bowling.calculate(input_value)
-# end
+%w(xxxxxxxxxxxx 00000000000000000000 90909090909090909090 5/5/5/5/5/5/5/5/5/5/5 14456/5/00017/6/002/6 
+9/356136815325807181 903/613/815/0/807/80 x3/61xxx2/907/xxx).each do |input_value|
+	score_bowling = ScoreBowling.new
+	score_bowling.calculate(input_value)
+end
