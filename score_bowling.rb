@@ -3,7 +3,7 @@ class ScoreBowling < InputSplit
 	def calculate(input)
 		final_total = 0
 		input.each_with_index do |frame_score,index|
-			if index < 10
+			if is_value?(index)
 				frame_total = 0
 				if frame_score[0] == 10
 					frame_total += 10
@@ -16,15 +16,15 @@ class ScoreBowling < InputSplit
 						end
 					else # duplicate block
 						frame_total += input[index+1][0].to_i
-						if input[index+1][1] == "/"
+						if is_spare?(input[index+1][1])
 							frame_total += (10-input[index+1][0].to_i)
 						else
 							frame_total += input[index+1][1].to_i
 						end
 					end
-				elsif frame_score[0].to_i < 10 # dupicate block
+				elsif is_value?(frame_score[0]) # dupicate block
 					frame_total += frame_score[0].to_i
-					if frame_score[1] == "/"
+					if is_spare?(frame_score[1])
 						frame_total += (10-frame_score[0].to_i) 
 						if index != 10
 							frame_total += input[index+1][0].to_i
@@ -32,10 +32,10 @@ class ScoreBowling < InputSplit
 					else
 						frame_total += frame_score[1].to_i
 					end
-				elsif frame_score[0].to_i < 10 & frame_score[1].to_i < 10
+				elsif is_value?(frame_score[0]) & is_value?(frame_score[1])
 					frame_total += frame_score[0].to_i + frame_score[1].to_i
 				end
-				p "Frame #{index+1} score is : #{frame_total}"				
+				p "Frame #{index+1} score is : #{frame_total}"
 
 				final_total += frame_total.to_i
 			end
